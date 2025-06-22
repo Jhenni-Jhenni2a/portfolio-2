@@ -1,167 +1,24 @@
-<!DOCTYPE html>
+
+     <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfólio Digital - Jhennifer</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <style>
-    body {
-      padding: 2rem;
-      background-color: #f8f9fa;
-      font-family: 'Segoe UI', sans-serif;
-      color: #333;
-    }
-    .gallery-img {
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    .gallery-img:hover {
-      transform: scale(1.05);
-    }
-    .img-fluid {
-      max-height: 300px;
-      object-fit: cover;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio - Jhennifer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light text-dark">
 
-  <!-- Galeria de Artes -->
-  <section class="container text-center mb-5">
-    <h1 class="mb-4">🎨 Galeria de Artes - Jhennifer</h1>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <img
-          src="img/amigos-na-floresta.jpg"
-          alt="Amigos na floresta"
-          class="img-fluid rounded gallery-img"
-          data-bs-toggle="modal"
-          data-bs-target="#img1"
-        />
-      </div>
-      <div class="col">
-        <img
-          src="img/guaraci-documento.jpg"
-          alt="Guaraci"
-          class="img-fluid rounded gallery-img"
-          data-bs-toggle="modal"
-          data-bs-target="#img2"
-        />
-      </div>
-      <div class="col">
-        <img
-          src="img/hoa-sen-documento.jpg"
-          alt="Hoa Sen"
-          class="img-fluid rounded gallery-img"
-          data-bs-toggle="modal"
-          data-bs-target="#img3"
-        />
-      </div>
-      <!-- (adicione as outras imagens do jeito que estava no seu código original) -->
-    </div>
-  </section>
-
-  <!-- Modais da galeria -->
-  <div id="modais">
-    <!-- Modal 1 -->
-    <div class="modal fade" id="img1" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content bg-dark">
-          <div class="modal-header border-0">
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body d-flex justify-content-center align-items-center">
-            <img src="img/amigos-na-floresta.jpg" class="img-fluid" alt="Amigos na floresta" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal 2 -->
-    <div class="modal fade" id="img2" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content bg-dark">
-          <div class="modal-header border-0">
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body d-flex justify-content-center align-items-center">
-            <img src="img/guaraci-documento.jpg" class="img-fluid" alt="Guaraci" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal 3 -->
-    <div class="modal fade" id="img3" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content bg-dark">
-          <div class="modal-header border-0">
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body d-flex justify-content-center align-items-center">
-            <img src="img/hoa-sen-documento.jpg" class="img-fluid" alt="Hoa Sen" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- (adicione os demais modais seguindo o mesmo padrão) -->
-  </div>
-
-  <!-- Seção Meus Projetos -->
   <main class="container mt-5">
-    <h2 class="mb-4">Meus Projetos</h2>
+    <h1 class="mb-4 text-center">Meus Projetos</h1>
     <div class="row">
       <!-- Projeto 1 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4">
         <div class="card">
-          <img
-            src="img/projeto-1.png"
-            class="card-img-top"
-            alt="Imagem do projeto de biblioteca virtual"
-          />
+          <img src="img/projeto-1.jpg" class="card-img-top" alt="Imagem do projeto 1" />
           <div class="card-body">
-            <h5 class="card-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
-            <p class="card-text">
-              Este projeto é uma página web que apresenta uma lista dos meus livros favoritos, incluindo informações sobre os autores, datas de publicação e links para compra na Amazon. A página é estilizada com CSS para uma visualização agradável e usa fontes externas do Google Fonts.
-            </p>
-            <button type="button" class="btn btn-link">Veja o projeto</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Projeto 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img
-            src="img/projeto-2.png"
-            class="card-img-top"
-            alt="Imagem do projeto portfolio de arte"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Portfolio de Arte</h5>
-            <p class="card-text">
-              Um site mostrando minhas obras de arte e técnicas de pintura, com imagens e descrições detalhadas.
-            </p>
-            <button type="button" class="btn btn-link">Veja o projeto</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Projeto 3 -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img
-            src="img/projeto-3.png"
-            class="card-img-top"
-            alt="Imagem do projeto blog pessoal"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Blog Pessoal</h5>
-            <p class="card-text">
-              Blog sobre tecnologia, programação e dicas de design, com artigos regulares e interação com leitores.
-            </p>
+            <h5 class="card-title">Minha Biblioteca</h5>
+            <p class="card-text">Uma página com meus livros favoritos, autores, datas e links para compra.</p>
             <button type="button" class="btn btn-link">Veja o projeto</button>
           </div>
         </div>
@@ -169,9 +26,14 @@
     </div>
   </main>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  ></script>
+  <footer class="container py-5">
+    <h2>Entre em contato</h2>
+    <div>
+      <a href="https://github.com/seunomedeusuario" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+    <p class="my-5 text-center">© Copyright 2024. Produzido por SEU NOME</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
