@@ -1,26 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
-
 :root {
-  --cor-principal: #6e859f;
-  --cor-secundaria: #284260;
-  --cor-destaque: #c92bfc;
+  --cor-principal: #333333;
+  --cor-destaque: #8a2be2;
 }
 
 body {
   font-family: "Chakra Petch", sans-serif;
+  color: var(--cor-principal);
+  background-color: #ffffff;
+  padding-bottom: 4rem;
 }
 
-h1,
-h2,
-h5 {
-  color: var(--cor-secundaria);
+.lead,
+.btn-link {
+  color: var(--cor-destaque);
   font-weight: 700;
 }
 
-footer a {
+a,
+.btn-link:hover {
   color: var(--cor-principal);
 }
 
-footer a:hover {
+a:hover {
+  color: var(--cor-destaque);
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  margin-top: 4rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
   color: var(--cor-destaque);
 }
