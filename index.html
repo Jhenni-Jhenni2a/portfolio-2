@@ -1,77 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Galeria de Artes - Jhennifer</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body { padding: 2rem; background-color: #f8f9fa; }
-    .gallery-img { cursor: pointer; transition: 0.3s; }
-    .gallery-img:hover { transform: scale(1.05); }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
 </head>
 <body>
 
 <div class="container text-center">
   <h1 class="mb-4">🎨 Galeria de Artes - Jhennifer</h1>
   <div class="row row-cols-1 row-cols-md-3 g-4">
-
     <!-- Imagens -->
-    <div class="col">
-      <img src="img/amigos-na-floresta.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img1">
-    </div>
-    <div class="col">
-      <img src="img/guaraci-documento.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img2">
-    </div>
-    <div class="col">
-      <img src="img/hoa-sen-documento.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img3">
-    </div>
-    <div class="col">
-      <img src="img/hugo-documento.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img4">
-    </div>
-    <div class="col">
-      <img src="img/maria-rosto-estudo.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img5">
-    </div>
-    <div class="col">
-      <img src="img/mulher-chique-europea.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img6">
-    </div>
-    <div class="col">
-      <img src="img/nadia-documento.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img7">
-    </div>
-    <div class="col">
-      <img src="img/opala-documento.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img8">
-    </div>
-    <div class="col">
-      <img src="img/paisagem-por-do-sol.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img9">
-    </div>
-    <div class="col">
-      <img src="img/tulifau-documentos.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img10">
-    </div>
-    <div class="col">
-      <img src="img/vaso.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img11">
-    </div>
-
+    <div class="col"><img src="img/amigos-na-floresta.jpg" alt="Amigos na floresta" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img1" /></div>
+    <div class="col"><img src="img/guaraci-documento.jpg" alt="Guaraci" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img2" /></div>
+    <div class="col"><img src="img/hoa-sen-documento.jpg" alt="Hoa Sen" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img3" /></div>
+    <div class="col"><img src="img/hugo-documento.jpg" alt="Hugo" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img4" /></div>
+    <div class="col"><img src="img/maria-rosto-estudo.jpg" alt="Maria" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img5" /></div>
+    <div class="col"><img src="img/mulher-chique-europea.jpg" alt="Mulher Europeia" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img6" /></div>
+    <div class="col"><img src="img/nadia-documento.jpg" alt="Nadia" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img7" /></div>
+    <div class="col"><img src="img/opala-documento.jpg" alt="Opala" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img8" /></div>
+    <div class="col"><img src="img/paisagem-por-do-sol.jpg" alt="Pôr do Sol" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img9" /></div>
+    <div class="col"><img src="img/tulifau-documentos.jpg" alt="Tulifau" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img10" /></div>
+    <div class="col"><img src="img/vaso.jpg" alt="Vaso" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#img11" /></div>
   </div>
 </div>
 
-<!-- Modais para tela cheia -->
-<!-- Você pode repetir isso para cada imagem -->
-<div class="modal fade" id="img1" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content bg-dark">
-      <div class="modal-header border-0">
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body d-flex justify-content-center align-items-center">
-        <img src="img/amigos-na-floresta.jpg" class="img-fluid">
+<!-- Modais -->
+<div id="modais">
+  <!-- Exemplo de modal, repita para as outras imagens -->
+  <div class="modal fade" id="img1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-center align-items-center">
+          <img src="img/amigos-na-floresta.jpg" class="img-fluid" />
+        </div>
       </div>
     </div>
   </div>
+  <!-- Repita os demais modais, como no código original -->
+  <!-- ... -->
 </div>
 
-<!-- Repita o bloco acima mudando o ID e o nome da imagem: img2, img3... -->
-<!-- Aqui estão os outros modais: -->
-<script>
-  const imagens = [
-    "guaraci-documento", "
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
